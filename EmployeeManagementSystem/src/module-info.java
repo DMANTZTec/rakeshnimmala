@@ -4,6 +4,6 @@
 /**
  * 
  */
-module BankingManagementSystem {
+module employeeManagementSystem {
 	requires java.sql;
 }
