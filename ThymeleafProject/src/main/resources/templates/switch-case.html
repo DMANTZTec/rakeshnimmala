@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link th:href="@{/css/main.css}" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+    <h1>Thymeleaf switch case demo</h1>
+    <h4 th:utext="${students.firstname}"></h4>
+    <div th:switch="${students.role}">
+    <p th:case="'ADMIN'"> user is an administrstor</p>
+        <p th:case="'USER'"> user is an student</p>
+    <!-- * for default case -->
+    <p th:case="*">User is some other thing</p>
+    
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>
